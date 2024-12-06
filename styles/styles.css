@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+
+  --brown-800: hsl(14, 45%, 36%);
+
+  --rose-50: hsl(330, 100%, 98%);
+  --rose-800: hsl(332, 51%, 32%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  color: var(--rose-800);
+}
+
+body {
+  background-color: var(--stone-100);
+}
+
+/* MAIN SECTION */
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  color: var(--brown-800);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section {
+  margin: 100px 0;
+  width: 60%;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: var(--white);
+}
+
+.hero-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hero-section h1 {
+  font-size: 2rem;
+  font-family: "Young Serif", serif;
+
+  color: var(--rose-800);
+  margin: 20px 0 20px 0;
+}
+
+.hero-section .preparation-time {
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: var(--rose-50);
+}
+
+.hero-section .preparation-time ul li {
+  margin-left: 30px;
+  margin-top: 8px;
+  text-indent: 10px;
+  color: var(--rose-800);
+}
+
+.hero-section .ingredients {
+  margin-top: 20px;
+}
+
+.hero-section .ingredients ul {
+  margin-left: 30px;
+  line-height: 1.8;
+  text-indent: 10px;
+}
+
+.hero-section .instructions {
+  margin-top: 20px;
+}
+
+.hero-section .instructions ol li {
+  margin: 10px 0 0 30px;
+  line-height: 1.5;
+  list-style-position: outside;
+  padding-left: 10px;
+  color: var(--rose-800);
+}
+
+.hero-section .instructions ol li::marker {
+  font-weight: bold;
+}
+
+/* NUTRITION */
+
+.nutrition {
+  margin-top: 20px;
+}
+
+.nutrition p {
+  margin-top: 10px;
+}
+
+.nutrition ul {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.nutrition ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  margin-left: 30px;
+  line-height: 1.8;
+  border-bottom: 2px solid var(--stone-150);
+}
+
+.nutrition ul li span {
+  margin-right: 300px;
+  font-weight: 700;
+}
